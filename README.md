@@ -4,4 +4,5 @@ It is using stochastic gradient descent to perform back propagation.
 It can achieve up to 97 % accuracy on MNIST data set with right parameters.
 ## Requirements
 Numpy - computing linear algebra
+
 Keras - importing dataset
