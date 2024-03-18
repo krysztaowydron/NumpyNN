@@ -1,2 +1,7 @@
 __pycache__/denseNN.cpython-311.pyc
 __pycache__/nn_class.cpython-311.pyc
+__pycache__/NN.cpython-311.pyc
+__pycache__/NN2.cpython-311.pyc
+__pycache__/NN3.cpython-311.pyc
+NN-cross-entropy.py
+NN-mse.py

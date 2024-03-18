@@ -2,7 +2,8 @@ import numpy as np
 
 from keras.datasets import mnist
 
-from denseNN import denseNN 
+from NN import NN
+
 
 # Preparing data
 (X_train, y_train), (X_test, y_test) = mnist.load_data()
@@ -22,9 +23,9 @@ for i in range(len(y_test)):
     new_y[i, y_test[i]] = 1
 y_test = new_y
 
-net = denseNN((28*28, 100, 10))
+net = NN((28*28, 100, 10))
 net.info()
-net.train(X_train, y_train, epoch=10, eta=3, mini_batch_size=10,
+net.train(X_train, y_train, epoch=30, eta=0.5, lam=0.2, mini_batch_size=10,
             Test=True, X_test=X_test, y_test=y_test)
 
 
